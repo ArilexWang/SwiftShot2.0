@@ -16,6 +16,8 @@
 		8C800F74219ABE0600BB6795 /* iPhone_Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C800F70219ABE0600BB6795 /* iPhone_Portrait.png */; };
 		8C800F75219ABE0600BB6795 /* iPhone_Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C800F71219ABE0600BB6795 /* iPhone_Landscape.png */; };
 		8C800F76219ABE0600BB6795 /* iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C800F72219ABE0600BB6795 /* iPad.png */; };
+		8C800F79219C301300BB6795 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C800F78219C301300BB6795 /* GameViewController.swift */; };
+		8C800F7B219C3BFA00BB6795 /* GameViewController+ARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C800F7A219C3BF900BB6795 /* GameViewController+ARSCNViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		8C800F70219ABE0600BB6795 /* iPhone_Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone_Portrait.png; sourceTree = "<group>"; };
 		8C800F71219ABE0600BB6795 /* iPhone_Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone_Landscape.png; sourceTree = "<group>"; };
 		8C800F72219ABE0600BB6795 /* iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPad.png; sourceTree = "<group>"; };
+		8C800F78219C301300BB6795 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		8C800F7A219C3BF900BB6795 /* GameViewController+ARSCNViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameViewController+ARSCNViewDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 		8C800F57219ABC0F00BB6795 /* SwiftShot1.0 */ = {
 			isa = PBXGroup;
 			children = (
+				8C800F77219C2FEE00BB6795 /* Main Game Screen */,
 				8C800F6D219ABDC500BB6795 /* Resources */,
 				8C800F6A219ABC3C00BB6795 /* Supporting View Controller */,
 				8C800F58219ABC0F00BB6795 /* AppDelegate.swift */,
@@ -98,6 +103,15 @@
 				8C800F6F219ABE0500BB6795 /* iPhone_X_Landscape.png */,
 			);
 			path = "Launch Screens";
+			sourceTree = "<group>";
+		};
+		8C800F77219C2FEE00BB6795 /* Main Game Screen */ = {
+			isa = PBXGroup;
+			children = (
+				8C800F78219C301300BB6795 /* GameViewController.swift */,
+				8C800F7A219C3BF900BB6795 /* GameViewController+ARSCNViewDelegate.swift */,
+			);
+			path = "Main Game Screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +190,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C800F6C219ABC7D00BB6795 /* GameStartViewController.swift in Sources */,
+				8C800F79219C301300BB6795 /* GameViewController.swift in Sources */,
+				8C800F7B219C3BFA00BB6795 /* GameViewController+ARSCNViewDelegate.swift in Sources */,
 				8C800F59219ABC0F00BB6795 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,6 +341,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 563L8XQYD8;
 				INFOPLIST_FILE = SwiftShot1.0/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -343,6 +360,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 563L8XQYD8;
 				INFOPLIST_FILE = SwiftShot1.0/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

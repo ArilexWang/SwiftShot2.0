@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Whz-uv-bmb">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,6 +10,35 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="sxX-38-yVy">
+            <objects>
+                <viewController id="Whz-uv-bmb" customClass="GameViewController" customModule="SwiftShot1_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oc8-1f-kp8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T7y-Vg-cR8">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="T7y-Vg-cR8" firstAttribute="bottom" secondItem="VBO-M7-vCE" secondAttribute="bottom" id="DKR-Yu-GBY"/>
+                            <constraint firstItem="T7y-Vg-cR8" firstAttribute="leading" secondItem="VBO-M7-vCE" secondAttribute="leading" id="Fq4-gD-nHF"/>
+                            <constraint firstItem="T7y-Vg-cR8" firstAttribute="top" secondItem="VBO-M7-vCE" secondAttribute="top" id="KXW-rp-Pp6"/>
+                            <constraint firstItem="T7y-Vg-cR8" firstAttribute="trailing" secondItem="VBO-M7-vCE" secondAttribute="trailing" id="VTI-8g-VZB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VBO-M7-vCE"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="T7y-Vg-cR8" id="n14-8u-cWZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rd8-qW-dET" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-999" y="-29"/>
+        </scene>
         <!--Game Start View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -66,7 +95,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="40.799999999999997" y="26.53673163418291"/>
+            <point key="canvasLocation" x="311" y="-29"/>
         </scene>
     </scenes>
     <resources>
